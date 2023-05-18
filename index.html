@@ -39,18 +39,28 @@
             <img src="./img/arq3r1.jpg" alt="casa" >
         </div>
         <a class="profile-btn" href="lorem-ipsum.pdf" download>DESCARGAR</a>
-        <form name="contacto" netlify>
-            <p>     
-                <label for="nombre">Nombre y Apellidos <input type="text" name="nombre">
-                </label>
+
+        <form name="contact" method="POST" netlify>
+            <p>
+                <label>Your Name: <input type="text" name="name" /></label>
             </p>
             <p>
-                <label for="email">email <input type="email" name="email"></label>
+                <label>Your Email: <input type="email" name="email" /></label>
             </p>
-         <p>
-            <button type="submit"> enviar</button>
-         </p>
+            <p>
+                <label>Your Role: <select name="role[]" multiple>
+                        <option value="leader">Leader</option>
+                        <option value="follower">Follower</option>
+                    </select></label>
+            </p>
+            <p>
+                <label>Message: <textarea name="message"></textarea></label>
+            </p>
+            <p>
+                <button type="submit">Send</button>
+            </p>
         </form>
+
     </section>  
   
 </body>
